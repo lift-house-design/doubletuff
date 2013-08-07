@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<items>
+  <item>
+    <inst>item_inst_0</inst>
+    <hook>home</hook>
+    <url><![CDATA[index.php?id_category=3&controller=category]]></url>
+    <html>
+        <lang_1><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ JIGSAW</h4>
+<h5>$125.89</h5>
+<h6>$175.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_1>
+        <lang_2><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ JIGSAW</h4>
+<h5>$125.89</h5>
+<h6>$175.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_2>
+        <lang_3><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ JIGSAW</h4>
+<h5>$125.89</h5>
+<h6>$175.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_3>
+        <lang_4><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ JIGSAW</h4>
+<h5>$125.89</h5>
+<h6>$175.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_4>
+        <lang_5><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ JIGSAW</h4>
+<h5>$125.89</h5>
+<h6>$175.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_5>
+    </html>
+
+    <img>60c325ddcb9dd143972e4fab3a785fa5.jpg</img>
+ </item>
+  <item>
+    <inst>item_inst_1</inst>
+    <hook>home</hook>
+    <url><![CDATA[index.php?id_category=8&controller=category]]></url>
+    <html>
+        <lang_1><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ IMPACT WRENCH</h4>
+<h5>$75.89</h5>
+<h6>$95.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_1>
+        <lang_2><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ IMPACT WRENCH</h4>
+<h5>$75.89</h5>
+<h6>$95.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_2>
+        <lang_3><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ IMPACT WRENCH</h4>
+<h5>$75.89</h5>
+<h6>$95.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_3>
+        <lang_4><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ IMPACT WRENCH</h4>
+<h5>$75.89</h5>
+<h6>$95.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_4>
+        <lang_5><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ IMPACT WRENCH</h4>
+<h5>$75.89</h5>
+<h6>$95.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_5>
+    </html>
+
+    <img>fefbec97a36cd3b79d9e60e981dcffdc.jpg</img>
+ </item>
+  <item>
+    <inst>item_inst_2</inst>
+    <hook>home</hook>
+    <url><![CDATA[index.php?id_category=4&controller=category]]></url>
+    <html>
+        <lang_1><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ RADIO WITH MP3 PLAYER</h4>
+<h5>$325.89</h5>
+<h6>$375.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_1>
+        <lang_2><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ RADIO WITH MP3 PLAYER</h4>
+<h5>$325.89</h5>
+<h6>$375.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_2>
+        <lang_3><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ RADIO WITH MP3 PLAYER</h4>
+<h5>$325.89</h5>
+<h6>$375.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_3>
+        <lang_4><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ RADIO WITH MP3 PLAYER</h4>
+<h5>$325.89</h5>
+<h6>$375.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_4>
+        <lang_5><![CDATA[<h3>Milwaukee</h3>
+<h4>M12™ RADIO WITH MP3 PLAYER</h4>
+<h5>$325.89</h5>
+<h6>$375.89</h6>
+<i class="icon-circle-arrow-right"></i>]]></lang_5>
+    </html>
+
+    <img>ea307aea7db94bc2c1ae84938f0d2831.jpg</img>
+ </item>
+  <item>
+    <inst>item_inst_3</inst>
+    <hook>right</hook>
+    <url><![CDATA[index.php?id_category=6&controller=category]]></url>
+    <html>
+        <lang_1><![CDATA[<i class="icon-truck"></i>
+<h5>Free</h5>
+<h6>Shipping</h6>]]></lang_1>
+        <lang_2><![CDATA[<i class="icon-truck"></i>
+<h5>Free</h5>
+<h6>Shipping</h6>]]></lang_2>
+        <lang_3><![CDATA[<i class="icon-truck"></i>
+<h5>Free</h5>
+<h6>Shipping</h6>]]></lang_3>
+        <lang_4><![CDATA[<i class="icon-truck"></i>
+<h5>Free</h5>
+<h6>Shipping</h6>]]></lang_4>
+        <lang_5><![CDATA[<i class="icon-truck"></i>
+<h5>Free</h5>
+<h6>Shipping</h6>]]></lang_5>
+    </html>
+
+
+ </item>
+  <item>
+    <inst>item_inst_4</inst>
+    <hook>right</hook>
+    <url><![CDATA[index.php?id_category=9&controller=category]]></url>
+    <html>
+        <lang_1><![CDATA[<i class="icon-thumbs-up-alt"></i>
+<h5>Satisfaction</h5>
+<h6>100% Guaranteed</h6>]]></lang_1>
+        <lang_2><![CDATA[<i class="icon-thumbs-up-alt"></i>
+<h5>Satisfaction</h5>
+<h6>100% Guaranteed</h6>]]></lang_2>
+        <lang_3><![CDATA[<i class="icon-thumbs-up-alt"></i>
+<h5>Satisfaction</h5>
+<h6>100% Guaranteed</h6>]]></lang_3>
+        <lang_4><![CDATA[<i class="icon-thumbs-up-alt"></i>
+<h5>Satisfaction</h5>
+<h6>100% Guaranteed</h6>]]></lang_4>
+        <lang_5><![CDATA[<i class="icon-thumbs-up-alt"></i>
+<h5>Satisfaction</h5>
+<h6>100% Guaranteed</h6>]]></lang_5>
+    </html>
+
+
+ </item>
+  <item>
+    <inst>item_inst_5</inst>
+    <hook>right</hook>
+    <url><![CDATA[index.php?id_product=10&controller=product]]></url>
+    <html>
+        <lang_1><![CDATA[<i class="icon-refresh"></i>
+<h5>14-Day</h5>
+<h6>Easy return</h6>]]></lang_1>
+        <lang_2><![CDATA[<i class="icon-refresh"></i>
+<h5>14-Day</h5>
+<h6>Easy return</h6>]]></lang_2>
+        <lang_3><![CDATA[<i class="icon-refresh"></i>
+<h5>14-Day</h5>
+<h6>Easy return</h6>]]></lang_3>
+        <lang_4><![CDATA[<i class="icon-refresh"></i>
+<h5>14-Day</h5>
+<h6>Easy return</h6>]]></lang_4>
+        <lang_5><![CDATA[<i class="icon-refresh"></i>
+<h5>14-Day</h5>
+<h6>Easy return</h6>]]></lang_5>
+    </html>
+
+
+ </item>
+</items>

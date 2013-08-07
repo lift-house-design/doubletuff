@@ -1,0 +1,74 @@
+
+
+
+@media only screen and (min-width: 950px) and (max-width: 1199px) {
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+
+}
+
+
+
+/*Backend Styles*/
+.customcontent_fieldset.deleteItem {
+  background: #F2DEDE;
+  border-color: #EED3D7;
+}
+.customcontent_fieldset {
+  margin-bottom: 20px;
+}
+.customcontent_fieldset label {
+  width: 120px;
+}
+.customcontent_fieldset .left-col {
+  float: left;
+  margin-right: 20px;
+  width: 510px;
+}
+.customcontent_fieldset .field {
+  margin-bottom: 6px;
+}
+.customcontent_fieldset .html {
+  position: relative;
+}
+.customcontent_fieldset .html .displayed_flag {
+  float: right;
+}
+.customcontent_fieldset .html .language_flags {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.customcontent_fieldset .deleteItem {
+  overflow: hidden;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+}
+.customcontent_fieldset .deleteItem input {
+  float: left;
+  margin-right: 6px;
+}
+.customcontent_fieldset .deleteItem label {
+  width: auto;
+  float: none;
+  display: inline;
+}
+.submit-wrapper {
+  margin: 20px 0;
+}

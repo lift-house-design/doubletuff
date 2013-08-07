@@ -1,0 +1,160 @@
+#customcontent_home {}
+#customcontent_home ul {}
+#customcontent_home ul li {float: left;margin: 1px 0 0 0;background: #2d2d2d;border-left: 1px solid #292929;position: relative;}
+#customcontent_home ul li a {display: block;}
+
+#customcontent_home ul li div {width: 100%;position: absolute;left: 0;top: 0;}
+#customcontent_home ul li div h3 {margin: 0;padding: 11px 0 0 16px;font: bold 28px 'Open Sans';color: #fff;}
+#customcontent_home ul li div h4 {width: 160px;height: 54px;margin: -5px 0 0 0;padding: 0 0 0 16px;font: bold 20px/18px 'Open Sans';color: #b82431;text-transform: uppercase;}
+#customcontent_home ul li div h5 {margin: 0;padding: 9px 0 0 16px;font: bold 26px 'Open Sans';color: #fff;}
+#customcontent_home ul li div h6 {margin: -11px 0 0 0;padding: 0 0 0 16px;font: bold 23px 'Open Sans';color: #5b5b5b;text-decoration: line-through;}
+#customcontent_home ul li div i.icon-circle-arrow-right {font-size: 31px;color: #fff;position: absolute;right: 20px;top: 130px;}
+#customcontent_home ul li:hover div i.icon-circle-arrow-right {color: #999;}
+
+
+
+#customcontent_right {}
+#customcontent_right ul {}
+#customcontent_right ul li {border-left: 5px solid #4b4b4b;text-transform: uppercase;}
+#customcontent_right ul li + li {margin: 1px 0 0 0;}
+#customcontent_right ul li a {display: block;}
+#customcontent_right ul li div {margin: 0 0 0 1px;overflow: hidden;}
+
+#customcontent_right ul li div {background: #a4222d;border-bottom: 1px solid #62141b;}
+#customcontent_right ul li i {height: 93px;float: left;margin: 0 7px 0 16px;font-size: 70px;color: #fff;line-height: 93px;}
+#customcontent_right ul li h5 {margin: 0;padding: 6px 0 0 0;font: bold 38px 'Open Sans';color: #fff;letter-spacing:-1px;}
+#customcontent_right ul li h6 {margin: -20px 0 0 0;padding: 0;font: normal 34px 'Open Sans';color: #fff;letter-spacing:-1px;}
+
+#customcontent_right ul li.item-1 div {}
+
+#customcontent_right ul li.item-2 div {background: #3b3b3b;border-bottom: 1px solid #242424;}
+#customcontent_right ul li.item-2 i {}
+#customcontent_right ul li.item-2 h5 {margin: 0;padding: 19px 0 0 0;font: bold 24px 'Open Sans';color: #fff;}
+#customcontent_right ul li.item-2 h6 {margin: -6px 0 0 0;padding: 0;font: normal 18px 'Open Sans';color: #a2a2a2;}
+
+#customcontent_right ul li.item-3 div {background: #b9b9b9;border-bottom: 1px solid #7d7d7d;}
+#customcontent_right ul li.item-3 i {margin: 0 7px 0 16px;}
+#customcontent_right ul li.item-3 h5 {margin: 0;padding: 5px 0 0 0;font: bold 38px 'Open Sans';color: #fff;}
+#customcontent_right ul li.item-3 h6 {margin: -13px 0 0 0;padding: 0;font: normal 27px 'Open Sans';color: #414141;}
+
+#customcontent_right ul li a:hover div {background: #252525 !important;}
+
+#customcontent_right ul li a:hover i,
+#customcontent_right ul li a:hover h5,
+#customcontent_right ul li a:hover h6 {color: #fff !important;}
+
+
+
+@media only screen and (min-width: 950px) and (max-width: 1199px) {
+
+#customcontent_home ul li {float: none;border: none;text-align: right;}
+#customcontent_home ul li img {height: 160px;}
+#customcontent_home ul li div {text-align: left;}
+#customcontent_home ul li div h4 {width: auto;height: auto;}
+#customcontent_home ul li div h5 {margin: 0;padding: 27px 0 0 16px;}
+#customcontent_home ul li div i.icon-circle-arrow-right {top: 110px;}
+
+
+
+#customcontent_right ul li {text-align: center;}
+#customcontent_right ul li div {padding: 10px;}
+#customcontent_right ul li i {height: auto;display: block;float: none;margin: 0 !important;line-height: 1.2em;}
+#customcontent_right ul li h5 {margin: 0 !important;padding: 0 !important;font: bold 27px 'Open Sans' !important;}
+#customcontent_right ul li h6 {margin: 0 !important;padding: 0 !important;font: normal 22px 'Open Sans' !important;}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+#customcontent_home ul li {float: none;border: none;text-align: right;}
+#customcontent_home ul li img {height: 160px;}
+#customcontent_home ul li div {text-align: left;}
+#customcontent_home ul li div h4 {width: auto;height: auto;}
+#customcontent_home ul li div h5 {margin: 0;padding: 27px 0 0 16px;}
+#customcontent_home ul li div i.icon-circle-arrow-right {top: 110px;}
+
+
+
+#customcontent_right ul li {text-align: center;}
+#customcontent_right ul li div {padding: 10px;}
+#customcontent_right ul li i {height: auto;display: block;float: none;margin: 0 !important;line-height: 1.2em;}
+#customcontent_right ul li h5 {margin: 0 !important;padding: 0 !important;font: bold 20px 'Open Sans' !important;}
+#customcontent_right ul li h6 {margin: 0 !important;padding: 0 !important;font: normal 17px 'Open Sans' !important;}
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+#customcontent_home ul li {float: none;border: none;text-align: right;}
+#customcontent_home ul li img {height: 160px;}
+#customcontent_home ul li div {text-align: left;}
+#customcontent_home ul li div h3 {padding: 10px 0 0 10px;font-size: 25px;}
+#customcontent_home ul li div h4 {width: auto;height: auto;padding: 0 140px 0 10px;font-size: 18px;}
+#customcontent_home ul li div h5 {margin: 0;padding: 6px 0 0 10px;font-size: 20px;}
+#customcontent_home ul li div h6 {margin: 0;padding: 0 0 0 10px;font-size: 18px;}
+#customcontent_home ul li div i.icon-circle-arrow-right {right: 10px;top: 120px;}
+
+
+
+
+
+
+
+}
+
+
+
+/*Backend Styles*/
+.customcontent_fieldset.deleteItem {
+  background: #F2DEDE;
+  border-color: #EED3D7;
+}
+.customcontent_fieldset {
+  margin-bottom: 20px;
+}
+.customcontent_fieldset label {
+  width: 120px;
+}
+.customcontent_fieldset .left-col {
+  float: left;
+  margin-right: 20px;
+  width: 510px;
+}
+.customcontent_fieldset .field {
+  margin-bottom: 6px;
+}
+.customcontent_fieldset .html {
+  position: relative;
+}
+.customcontent_fieldset .html .displayed_flag {
+  float: right;
+}
+.customcontent_fieldset .html .language_flags {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.customcontent_fieldset .deleteItem {
+  overflow: hidden;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+}
+.customcontent_fieldset .deleteItem input {
+  float: left;
+  margin-right: 6px;
+}
+.customcontent_fieldset .deleteItem label {
+  width: auto;
+  float: none;
+  display: inline;
+}
+.submit-wrapper {
+  margin: 20px 0;
+}
