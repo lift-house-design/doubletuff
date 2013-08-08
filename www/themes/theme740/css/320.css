@@ -43,7 +43,7 @@ form.std .text input, form.std .password input,form.std .select select,form.std 
 /* ************************************************************************************************
 HEADER
 ************************************************************************************************ */
-#header {padding: 207px 0 0 0;}
+#header {padding: 302px 0 0 0;}
 #header-inner {}
 
 .header_logo_wrapper {width: 100%;text-align: center;left: 0;top: 55px;}
@@ -100,11 +100,11 @@ LANGUAGES CURRENCIES
 #currencies_block_top {right:25%;}
 
 
-#search_block_top {width:100%;right:0px;top:110px;}
+#search_block_top {width:100%;right:0px;top:200px;}
 .ac_results {width: 306px !important;}
 
 
-#header_user {width: 100%;padding: 0;border: none;position: absolute;right: 0;top: 159px;}
+#header_user {width: 100%;padding: 0;border: none;position: absolute;right: 0;top: 252px;}
 #header_user #shopping_cart {width: 100%;padding: 8px 10px;background: #fff;
 -webkit-border-radius: 3px;
         border-radius: 3px;
@@ -146,7 +146,7 @@ BLOCK HEADER USER INFO LOGIN/LOGOUT
 /* ************************************************************************************************
 FOOTER 
 *********************************************************************************************** */
-.footer-bg-mob {padding: 15px 0 65px 0;}
+.footer-bg-mob {padding: 15px 0 15px 0;}
 
 footer .block {width:100%}
 footer .block h4{ padding:11px 0px 10px 0px;margin-top:0px; margin-bottom:0; position:relative;}
