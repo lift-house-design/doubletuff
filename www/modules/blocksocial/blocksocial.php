@@ -43,13 +43,13 @@ class blocksocial extends Module
 	
 	public function install()
 	{
-		return (parent::install() AND Configuration::updateValue('blocksocial_facebook', '') && Configuration::updateValue('blocksocial_twitter', '') && Configuration::updateValue('blocksocial_rss', '') && $this->registerHook('displayHeader') && $this->registerHook('displayFooter'));
+		return (parent::install() AND Configuration::updateValue('blocksocial_facebook', '') && Configuration::updateValue('blocksocial_linkedin', '') && Configuration::updateValue('blocksocial_twitter', '') && Configuration::updateValue('blocksocial_rss', '') && $this->registerHook('displayHeader') && $this->registerHook('displayFooter'));
 	}
 	
 	public function uninstall()
 	{
 		//Delete configuration			
-		return (Configuration::deleteByName('blocksocial_facebook') AND Configuration::deleteByName('blocksocial_twitter') AND Configuration::deleteByName('blocksocial_rss') AND parent::uninstall());
+		return (Configuration::deleteByName('blocksocial_facebook') AND Configuration::deleteByName('blocksocial_linkedin') AND Configuration::deleteByName('blocksocial_twitter') AND Configuration::deleteByName('blocksocial_rss') AND parent::uninstall());
 	}
 	
 	public function getContent()
@@ -59,6 +59,7 @@ class blocksocial extends Module
 		if (isset($_POST['submitModule']))
 		{	
 			Configuration::updateValue('blocksocial_facebook', (($_POST['facebook_url'] != '') ? $_POST['facebook_url']: ''));
+			Configuration::updateValue('blocksocial_linkedin', (($_POST['linkedin_url'] != '') ? $_POST['linkedin_url']: ''));
 			Configuration::updateValue('blocksocial_twitter', (($_POST['twitter_url'] != '') ? $_POST['twitter_url']: ''));		
 			Configuration::updateValue('blocksocial_rss', (($_POST['rss_url'] != '') ? $_POST['rss_url']: ''));				
 			$this->_clearCache('blocksocial.tpl');
@@ -72,6 +73,9 @@ class blocksocial extends Module
 			<fieldset class="width2">				
 				<label for="facebook_url">'.$this->l('Facebook URL: ').'</label>
 				<input type="text" id="facebook_url" name="facebook_url" value="'.Tools::safeOutput((Configuration::get('blocksocial_facebook') != "") ? Configuration::get('blocksocial_facebook') : "").'" />
+				<div class="clear">&nbsp;</div>				
+				<label for="linkedin_url">'.$this->l('LinkedIn URL: ').'</label>
+				<input type="text" id="linkedin_url" name="linkedin_url" value="'.Tools::safeOutput((Configuration::get('blocksocial_linkedin') != "") ? Configuration::get('blocksocial_linkedin') : "").'" />
 				<div class="clear">&nbsp;</div>		
 				<label for="twitter_url">'.$this->l('Twitter URL: ').'</label>
 				<input type="text" id="twitter_url" name="twitter_url" value="'.Tools::safeOutput((Configuration::get('blocksocial_twitter') != "") ? Configuration::get('blocksocial_twitter') : "").'" />
@@ -94,6 +98,7 @@ class blocksocial extends Module
 		if (!$this->isCached('blocksocial.tpl', $this->getCacheId()))
 			$this->smarty->assign(array(
 				'facebook_url' => Configuration::get('blocksocial_facebook'),
+				'linkedin_url' => Configuration::get('blocksocial_linkedin'),
 				'twitter_url' => Configuration::get('blocksocial_twitter'),
 				'rss_url' => Configuration::get('blocksocial_rss')
 			));
