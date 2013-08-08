@@ -1,0 +1,2 @@
+1) Change config/settings.inc.php to use the new database connection info.
+2) Do a find/replace on the database dump, replace 'doubletuff.com' with the new hostname. Import the dump.
