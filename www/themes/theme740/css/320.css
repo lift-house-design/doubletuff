@@ -46,10 +46,10 @@ HEADER
 #header {padding: 302px 0 0 0;}
 #header-inner {}
 
-.header_logo_wrapper {width: 100%;text-align: center;left: 0;top: 55px;}
+.header_logo_wrapper {width: 100%;text-align: center;left: 0;top: 65px;}
 
 #header_logo {}
-#header_logo img {width: 185px;}
+#header_logo img {/*width: 185px;*/ width: 220px;}
 
 .blockuserinfo_wrap {position: static;top: auto;right: auto;}
 
@@ -104,7 +104,7 @@ LANGUAGES CURRENCIES
 .ac_results {width: 306px !important;}
 
 
-#header_user {width: 100%;padding: 0;border: none;position: absolute;right: 0;top: 252px;}
+#header_user {width: 100%;padding: 0;border: none;position: absolute;right: 0;top: 250px;}
 #header_user #shopping_cart {width: 100%;padding: 8px 10px;background: #fff;
 -webkit-border-radius: 3px;
         border-radius: 3px;
