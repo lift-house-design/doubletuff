@@ -1,3 +1,4 @@
-# PrestaShop cache/tmp directories
-www/cache/**
-www/img/tmp/**
+# PrestaShop cache/log directories
+www/cache
+www/log
+www/themes/default/cache
