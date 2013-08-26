@@ -8,7 +8,7 @@
 .bx-window {margin-bottom:20px;}
 .bx-wrapper {
 	margin-bottom:20px;
-	height:300px
+	height:500px
 }
  
 /*next button*/
@@ -40,10 +40,11 @@
 
 /*pager links*/
 .bx-pager {
-   position: absolute;
+ /*  position: absolute;
    bottom: 20px;
-	bottom:40px !ie;/* hack ie7 */
-	right: 15px;
+	bottom:40px !ie;
+	right: 15px; */
+	margin-top: -40px;
 	padding-top: 7px;
 	font-size:11px;
 	color:#666;
