@@ -1,3 +1,23 @@
+<!-- MODULE Video -->
+<section id="video_block_right" class="block products_block column_box">
+	<h4 class="title_block"><span>{l s='Video' mod='blocknewproducts'}</span> <i class="column_icon_toggle icon-plus-sign"></i></h4>
+	<div class="block_content toggle_content">
+		<ul class="products">
+        	<li class="shop_box clearfix">
+       			<a class="products_block_img" href="#" title="" style="display:block">
+                	<img src="http://localdoubletuff.com/img/p/en-default-medium_default.jpg" alt="{$newproduct.legend|escape:html:'UTF-8'}" />
+               	</a>
+           		<h5 class="s_title_block" style="padding-top:20px">
+					<a class="product_link" href="#">
+						<i class="icon icon-play"> <b>Play Video</b></i></a>
+					</a>
+           		</h5>
+            </li>
+		</ul>
+	</div>
+</section>
+<!-- /MODULE Block new products -->
+
 <!-- MODULE Block new products -->
 <section id="new-products_block_right" class="block products_block column_box">
 	<h4 class="title_block"><span>{l s='New products' mod='blocknewproducts'}</span> <i class="column_icon_toggle icon-plus-sign"></i></h4>
