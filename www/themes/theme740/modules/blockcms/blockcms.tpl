@@ -22,8 +22,8 @@
 <section class="block blockcms_footer span3">
         <h4 class="toggle">{l s='Information' mod='blockcms'}<i class="icon-plus-sign"></i></h4>
 		<ul class="list-footer toggle_content clearfix">
-			{if !$PS_CATALOG_MODE}<li class="first_item"><a href="{$link->getPageLink('prices-drop')}" title="{l s='Specials' mod='blockcms'}"><i class="icon-circle-arrow-right"></i>{l s='Specials' mod='blockcms'}</a></li>{/if}
-			{if !$PS_CATALOG_MODE}<li class="item"><a href="{$link->getPageLink('best-sales')}" title="{l s='Top sellers' mod='blockcms'}"><i class="icon-circle-arrow-right"></i>{l s='Top sellers' mod='blockcms'}</a></li>{/if}
+			{if !$PS_CATALOG_MODE}<!--li class="first_item"><a href="{$link->getPageLink('prices-drop')}" title="{l s='Specials' mod='blockcms'}"><i class="icon-circle-arrow-right"></i>{l s='Specials' mod='blockcms'}</a></li-->{/if}
+			{if !$PS_CATALOG_MODE}<!--li class="item"><a href="{$link->getPageLink('best-sales')}" title="{l s='Top sellers' mod='blockcms'}"><i class="icon-circle-arrow-right"></i>{l s='Top sellers' mod='blockcms'}</a></li-->{/if}
 			<!--li class="item"><a href="{$link->getPageLink($contact_url, true)}" title="{l s='Contact us' mod='blockcms'}"><i class="icon-circle-arrow-right"></i>{l s='Contact us' mod='blockcms'}</a></li-->
 			{foreach from=$cmslinks item=cmslink}
 				{if $cmslink.meta_title != ''}
@@ -33,7 +33,7 @@
 			<!--li><a href="{$link->getPageLink('sitemap')}" title="{l s='sitemap' mod='blockcms'}"><i class="icon-circle-arrow-right"></i>{l s='Sitemap' mod='blockcms'}</a></li-->
 {*
 			<!--li class="{if $PS_CATALOG_MODE}first_{/if}item"><a href="{$link->getPageLink('new-products')}" title="{l s='New products' mod='blockcms'}">{l s='New products' mod='blockcms'}</a></li-->
-			{if $display_stores_footer}<li class="item"><a href="{$link->getPageLink('stores')}" title="{l s='Our stores' mod='blockcms'}">{l s='Our stores' mod='blockcms'}</a></li>{/if}
+			{if $display_stores_footer}<!--li class="item"><a href="{$link->getPageLink('stores')}" title="{l s='Our stores' mod='blockcms'}">{l s='Our stores' mod='blockcms'}</a></li-->{/if}
 *}
 		</ul>
 	{$footer_text}
