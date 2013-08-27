@@ -69,19 +69,19 @@
 				</div>
 				<div class="ui-block-b">
 					<div id="block_cart" class="clearfix">
-						{if !$PS_CATALOG_MODE}
-						<a href="{$link->getPageLink('order-opc', true)}" class="link_cart" data-ajax="false">
-							<i class="icon-shopping-cart"></i>&nbsp;{l s='Cart'}
-						</a>
-						{/if}
 						{if $logged}
 							<a href="{$link->getPageLink('my-account', true)}" class="link_account" data-ajax="false">
-								<i class="icon-unlock"></i>&nbsp;{l s='My account'}
+								<i class="icon-unlock"></i>&nbsp;&nbsp;{l s='My account'}
 							</a>
 						{else}
 							<a href="{$link->getPageLink('authentication', true)}" class="link_account" data-ajax="false">
-								<i class="icon-lock"></i>&nbsp;{l s='Log in'}
+								<i class="icon-lock"></i>&nbsp;&nbsp;{l s='Log in'}
 							</a>
+						{/if}<br/>
+						{if !$PS_CATALOG_MODE}
+						<a href="{$link->getPageLink('order-opc', true)}" class="link_cart" data-ajax="false">
+							<i class="icon-shopping-cart"></i>&nbsp;&nbsp;{l s='Cart'}
+						</a>
 						{/if}
 					</div>
 					{hook h="displayMobileTop"}
