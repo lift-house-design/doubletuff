@@ -55,18 +55,22 @@
 {/if}
 
 <hr/>
-<h2>{l s='Information' mod='blockcms'}</h2>
+<h2>{l s='Information'}</h2>
 <ul data-role="listview" data-inset="true">
-	{foreach from=$cmslinks item=cmslink}
-		{if $cmslink.meta_title != ''}
-			<li>
-				<a href="{$cmslink.link|addslashes}" title="{$cmslink.meta_title|escape:'htmlall':'UTF-8'}">
-					<i class="icon-circle-arrow-right"></i>
-					{$cmslink.meta_title|escape:'htmlall':'UTF-8'}
-				</a>
-			</li>
-		{/if}
-	{/foreach}
+	<li>
+		<a href="{$link->getPageLink('content/1-delivery')}">
+			Delivery
+		</a>
+		<a href="{$link->getPageLink('content/3-terms-and-conditions')}">
+			Terms and Comditions
+		</a>
+		<a href="{$link->getPageLink('content/4-about-us')}">
+			About Us
+		</a>
+		<a href="{$link->getPageLink('content/6-privacy')}">
+			Privacy
+		</a>
+	</li>
 </ul>
 
 <hr/>
