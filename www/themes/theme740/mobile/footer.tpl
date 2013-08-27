@@ -28,9 +28,9 @@
 					{hook h="displayMobileFooterChoice"}
 				</div><!-- /grid-a -->
 
-				<div id="full-site-section" class="center">
+				<!--div id="full-site-section" class="center">
 					<a href="{$link->getPageLink('index', true)}?no_mobile_theme" data-ajax="false">{l s='Browse the full site'}</a>
-				</div>
+				</div-->
 
 				<div data-role="footer" data-theme="a" id="bar_footer">
 					<div id="link_bar_footer" class="ui-grid-a">
