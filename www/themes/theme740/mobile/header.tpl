@@ -52,6 +52,7 @@
 	<link href="{$css_uri}" rel="stylesheet" type="text/css" media="{$media}" />
 	{/foreach}
 {/if}
+	<link href="{$css_dir}font.css" rel="stylesheet" type="text/css" media="all"/>
 {if isset($js_files)}
 	{foreach from=$js_files item=js_uri}
 	<script type="text/javascript" src="{$js_uri}"></script>
@@ -69,12 +70,18 @@
 				<div class="ui-block-b">
 					<div id="block_cart" class="clearfix">
 						{if !$PS_CATALOG_MODE}
-						<a href="{$link->getPageLink('order-opc', true)}" class="link_cart" data-ajax="false">{l s='Cart'}</a>
+						<a href="{$link->getPageLink('order-opc', true)}" class="link_cart" data-ajax="false">
+							<i class="icon-shopping-cart"></i>&nbsp;{l s='Cart'}
+						</a>
 						{/if}
 						{if $logged}
-							<a href="{$link->getPageLink('my-account', true)}" class="link_account" data-ajax="false">{l s='My account'}</a>
+							<a href="{$link->getPageLink('my-account', true)}" class="link_account" data-ajax="false">
+								<i class="icon-unlock"></i>&nbsp;{l s='My account'}
+							</a>
 						{else}
-							<a href="{$link->getPageLink('authentication', true)}" class="link_account" data-ajax="false">{l s='Log in'}</a>
+							<a href="{$link->getPageLink('authentication', true)}" class="link_account" data-ajax="false">
+								<i class="icon-lock"></i>&nbsp;{l s='Log in'}
+							</a>
 						{/if}
 					</div>
 					{hook h="displayMobileTop"}
