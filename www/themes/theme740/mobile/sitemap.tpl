@@ -79,6 +79,7 @@
 	</li>
 </ul>
 
+{if $logged}
 <hr/>
 <h2>{l s='Account'}</h2>
 <ul data-role="listview" data-inset="true" id="category">
@@ -88,3 +89,4 @@
 	{if $voucherAllowed}<li><a href="{$link->getPageLink('discount', true)}">{l s='Discounts'}</a></li>{/if}
 	<li><a href="{$link->getPageLink('history', true)}">{l s='Order history'}</a></li>
 </ul>
+{/if}
