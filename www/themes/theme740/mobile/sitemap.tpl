@@ -58,16 +58,22 @@
 <h2>{l s='Information'}</h2>
 <ul data-role="listview" data-inset="true">
 	<li>
-		<a href="{$link->getPageLink('content/1-delivery')}">
+		<a href="/content/1-delivery">
 			Delivery
 		</a>
-		<a href="{$link->getPageLink('content/3-terms-and-conditions')}">
+	</li>
+	<li>
+		<a href="/content/3-terms-and-conditions">
 			Terms and Comditions
 		</a>
-		<a href="{$link->getPageLink('content/4-about-us')}">
+	</li>
+	<li>
+		<a href="/content/4-about-us">
 			About Us
 		</a>
-		<a href="{$link->getPageLink('content/6-privacy')}">
+	</li>
+	<li>
+		<a href="/content/6-privacy">
 			Privacy
 		</a>
 	</li>
