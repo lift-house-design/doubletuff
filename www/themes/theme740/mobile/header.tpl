@@ -70,8 +70,8 @@
 				<div class="ui-block-b">
 					<div id="block_cart" class="clearfix">
 						{if $logged}
-							<a href="{$link->getPageLink('my-account', true)}" class="link_account" data-ajax="false">
-								<i class="icon-unlock"></i>&nbsp;&nbsp;{l s='My account'}
+							<a href="{$link->getPageLink('index', true, NULL, "mylogout")}" class="link_account" data-ajax="false">
+								<i class="icon-unlock"></i>&nbsp;&nbsp;{l s='Log Out'}
 							</a>
 						{else}
 							<a href="{$link->getPageLink('authentication', true)}" class="link_account" data-ajax="false">
