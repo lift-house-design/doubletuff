@@ -27,7 +27,7 @@
 {include file='./page-title.tpl'}
 
 <div data-role="content" id="content">
-		<p>{l s='Welcome to your account. Here you can manage al of your personal information and orders. '}</p>
+		<!--p>{l s='Welcome to your account. Here you can manage al of your personal information and orders. '}</p>
 		
 		<ul data-role="listview" data-inset="true" id="list_myaccount">
 			{if $has_customer_an_address}
@@ -92,6 +92,6 @@
 		<a href="{$base_dir}" class="lnk_my-account_home" title="{l s='Home'}" data-ajax="false">
 			<img class="" alt="{l s='Home'}" src="{$img_mobile_dir}icon/home.png">
 			{l s='Home'}
-		</a>
+		</a-->
 		{include file='./sitemap.tpl'}
 	</div><!-- /content -->

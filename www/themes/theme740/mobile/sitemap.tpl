@@ -83,7 +83,7 @@
 <hr/>
 <h2>{l s='Account'}</h2>
 <ul data-role="listview" data-inset="true" id="category">
-	<li><a href="{$link->getPageLink('my-account', true)}">{l s='Your Account'}</a></li>
+	<!--li><a href="{$link->getPageLink('my-account', true)}">{l s='Your Account'}</a></li-->
 	<li><a href="{$link->getPageLink('identity', true)}">{l s='Personal information'}</a></li>
 	<li><a href="{$link->getPageLink('addresses', true)}">{l s='Addresses'}</a></li>
 	{if $voucherAllowed}<li><a href="{$link->getPageLink('discount', true)}">{l s='Discounts'}</a></li>{/if}

@@ -33,7 +33,7 @@
 	</p>
 {/if}
 <div class="titled_box">
-<h2><span>{l s='Welcome to your account. Here you can manage al of your personal information and orders. '}</span></h2>
+<h2><span>{l s='Welcome to your account. Here you can manage all of your personal information and orders. '}</span></h2>
 <ul class="myaccount_lnk_list">
 	{if $has_customer_an_address}
 		<li><a href="{$link->getPageLink('address', true)}" title="{l s='Add my first address'}"><i class="icon-building"></i> {l s='Add my first address'}</a></li>
