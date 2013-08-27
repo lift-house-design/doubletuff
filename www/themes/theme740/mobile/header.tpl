@@ -71,11 +71,11 @@
 					<div id="block_cart" class="clearfix">
 						{if $logged}
 							<a href="{$link->getPageLink('index', true, NULL, "mylogout")}" class="link_account" data-ajax="false">
-								<i class="icon-unlock"></i>&nbsp;&nbsp;{l s='Log Out'}
+								<i class="icon-lock"></i>&nbsp;&nbsp;{l s='Logout'}
 							</a>
 						{else}
 							<a href="{$link->getPageLink('authentication', true)}" class="link_account" data-ajax="false">
-								<i class="icon-lock"></i>&nbsp;&nbsp;{l s='Log in'}
+								<i class="icon-unlock"></i>&nbsp;&nbsp;{l s='Log in'}
 							</a>
 						{/if}<br/>
 						{if !$PS_CATALOG_MODE}
