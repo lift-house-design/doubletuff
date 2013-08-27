@@ -55,7 +55,7 @@
 {/if}
 
 <hr/>
-<h2>{l s='Information'}</h2>
+<h2>{l s='Information' mod='blockcms'}</h2>
 <ul data-role="listview" data-inset="true">
 	{foreach from=$cmslinks item=cmslink}
 		{if $cmslink.meta_title != ''}
