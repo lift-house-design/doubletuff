@@ -6,10 +6,16 @@
  */
 #homeslider li.pager { margin-top:0px !important; }
 
-.bx-window {margin-bottom:20px;}
+.bx-window {
+	margin-bottom:20px;
+	width:auto !important;
+	height:auto !important;
+}
 .bx-wrapper {
 	margin-bottom:20px;
-	height:500px
+	height:500px;
+	width:auto !important;
+	height:auto !important;
 }
  
 /*next button*/
