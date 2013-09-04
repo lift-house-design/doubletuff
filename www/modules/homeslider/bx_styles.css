@@ -4,6 +4,7 @@
  * To change the color scheme of slider change each 
  * background property for each of the five styles below
  */
+#homeslider li.pager { margin-top:0px !important; }
 
 .bx-window {margin-bottom:20px;}
 .bx-wrapper {
