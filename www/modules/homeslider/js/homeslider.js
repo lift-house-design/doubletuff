@@ -32,7 +32,7 @@ $(function(){
 		homeslider_pause = 3000;
 	if (typeof(homeslider_loop) == 'undefined')
 		homeslider_loop = true;
-
+/*
 	$('#homeslider').bxSlider({
 		infiniteLoop: homeslider_loop,
 		hideControlOnEnd: true,
@@ -42,5 +42,12 @@ $(function(){
 		speed: homeslider_speed,
 		pause: homeslider_pause,
 		controls: false
+	});
+*/
+	$('#homeslider_custom').bxSlider({
+		auto: true,
+		mode: 'fade',
+		randomStart: true,
+		controls:false
 	});
 });
