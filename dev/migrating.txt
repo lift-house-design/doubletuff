@@ -1,2 +1,14 @@
 1) Change config/settings.inc.php to use the new database connection info.
 2) Do a find/replace on the database dump, replace 'doubletuff.com' with the new hostname. Import the dump.
+
+
+---------------------------------
+UPDATING YOUR DATABASE
+Log into cPanel, then go to "PHPMyAdmin" and log into your PrestaShop database. Go to the table "ps_configuration" and locate the records for PS_SHOP_DOMAIN and PS_SHOP_DOMAIN_SSL. Change these to the new domain name. Check the configuration table for any other entries that contain the old domain name and change accordingly.
+
+UPDATING YOUR CONFIG SETTINGS
+Via FTP or the file manager in cPanel, modify the PHP file /config/settings.inc.php. Look for the entry for PS_BASE_URI__ and modify as necessary. For a shop located in the root, it should read:
+
+?
+1
+define('__PS_BASE_URI__', '/');

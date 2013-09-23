@@ -1,8 +1,15 @@
 <?php
 define('_DB_SERVER_', 'localhost');
-define('_DB_NAME_', 'thomas_doubletuff');
-define('_DB_USER_', 'thomas');
-define('_DB_PASSWD_', 'Dsb6Zf3npPi8');
+if(stripos($_SERVER['HTTP_HOST'],'local') !== false)
+{
+	define('_DB_NAME_', 'doubletuff');
+	define('_DB_USER_', 'root');
+	define('_DB_PASSWD_', 'root');
+}else{
+	define('_DB_NAME_', 'thomas_doubletuff');
+	define('_DB_USER_', 'thomas');
+	define('_DB_PASSWD_', 'Dsb6Zf3npPi8');
+}
 define('_DB_PREFIX_', 'ps_');
 define('_MYSQL_ENGINE_', 'InnoDB');
 define('_PS_CACHING_SYSTEM_', 'CacheMemcache');
