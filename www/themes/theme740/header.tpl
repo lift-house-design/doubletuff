@@ -51,7 +51,7 @@
 <link href="{$css_dir}320.css" rel="stylesheet" type="text/css" media="all" />
 <link href="{$css_dir}480.css" rel="stylesheet" type="text/css" media="all" />
 <link href="{$css_dir}768.css" rel="stylesheet" type="text/css" media="all" />
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='{$css_dir}google-open-sans.css' rel='stylesheet' type='text/css'>
 {if isset($js_files)}
 {foreach from=$js_files item=js_uri}
 <script type="text/javascript" src="{$js_uri}"></script>
