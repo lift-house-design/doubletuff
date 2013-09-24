@@ -49,7 +49,7 @@ HEADER
 .header_logo_wrapper {width: 100%;text-align: center;left: 0;top: 65px;}
 
 #header_logo {}
-#header_logo img {/*width: 185px;*/ width: auto;max-height:180px;}
+#header_logo img {/*width: 185px;*/ width: auto;max-height:240px;}
 /*
 .blockuserinfo_wrap {position: static;top: auto;right: auto;}
 
