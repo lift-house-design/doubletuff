@@ -49,12 +49,12 @@ HEADER
 .header_logo_wrapper {width: 100%;text-align: center;left: 0;top: 65px;}
 
 #header_logo {}
-#header_logo img {/*width: 185px;*/ width: 220px;}
-
+#header_logo img {/*width: 185px;*/ width: auto;max-height:180px;}
+/*
 .blockuserinfo_wrap {position: static;top: auto;right: auto;}
 
-
-
+*/
+.blockuserinfo_wrap{top:-2px;}
 /* ************************************************************************************************
 MOBILE MENU TOP
 ************************************************************************************************ */
@@ -104,21 +104,17 @@ LANGUAGES CURRENCIES
 .ac_results {width: 306px !important;}
 
 
-#header_user {width: 100%;padding: 0;border: none;position: absolute;right: 0;top: 250px;}
+/*#header_user {width: 100%;padding: 0;border: none;position: absolute;right: 0;top: 250px;}
 #header_user #shopping_cart {width: 100%;padding: 8px 10px;background: #fff;
 -webkit-border-radius: 3px;
         border-radius: 3px;
 }
 
-#header_user #shopping_cart a span {color: #b82431 !important;}
-#header_user #shopping_cart a i {color: #252525 !important;}
 #header_user #shopping_cart a i.opancart {float: right;margin: 3px 0 0 0;}
-
-#header #cart_block {right: 0;top: 200px;
--webkit-border-radius: 3px;
-        border-radius: 3px;
+*/
+#header #cart_block {right: 0;top: 47px;
 }
-
+/*
 
 .alert_cart{ background:#000; width:310px; position: fixed; left:50%; top:0; margin-left:-155px; z-index:9998;}
 .alert_cart a{ display:block; padding:21px 40px 22px 50px; height:42px; font-size:12px; color:#fff; font-weight:bold; position:relative;z-index:9997;}
@@ -128,19 +124,19 @@ LANGUAGES CURRENCIES
 .alert_cart a:hover{ color:#a9a9a9;}
 .alert_cart img{border:2px solid #999;position:relative; background:#fff;}
 .nbrItemPage.nbr_page .b-core-ui-select{ margin-left:5px;}
-
+*/
 
 
 /* ************************************************************************************************
 BLOCK HEADER USER INFO LOGIN/LOGOUT
 ************************************************************************************************ */
-.blockuserinfo {width:25%;height:45px;padding: 0;background:#444;text-align:center;position:absolute;right: 0px;top: 0px;
+/*.blockuserinfo {width:25%;height:45px;padding: 0;background:#444;text-align:center;position:absolute;right: 0px;top: 0px;
 -webkit-border-radius: 0 3px 0 0;
         border-radius: 0 3px 0 0;
 }
 .blockuserinfo a {height: 45px;display:block;}
 .blockuserinfo a span i {color: #787878;line-height: 45px !important;}
-
+*/
 
 
 /* ************************************************************************************************
