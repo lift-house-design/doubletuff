@@ -25,8 +25,8 @@
 <section id="contact_block" class="block column_box">
 	<h4 class="title_block"><span>{l s='Contact us' mod='blockcontact'}</span><i class="column_icon_toggle icon-plus-sign"></i></h4>
 	<div class="block_content clearfix toggle_content">
-			<h5>{l s='Our hotline is available 24/7' mod='blockcontact'}</h5>
+			<h5>{l s='Give us a call today!' mod='blockcontact'}</h5>
 			{if $telnumber != ''}<p class="tel"><span class="label">{l s='Phone:' mod='blockcontact'}</span>{$telnumber|escape:'htmlall':'UTF-8'}</p>{/if}
-			{if $email != ''}<a class="button" href="mailto:{$email|escape:'htmlall':'UTF-8'}">{l s='Contact our hotline' mod='blockcontact'}</a>{/if}
+			{if $email != ''}<a class="button" href="mailto:{$email|escape:'htmlall':'UTF-8'}">{l s='Send us an email' mod='blockcontact'}</a>{/if}
 	</div>
 </section>
