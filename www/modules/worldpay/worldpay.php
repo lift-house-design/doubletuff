@@ -30,6 +30,7 @@ class worldpay extends PaymentModule
 		//Delete configuration
 		Configuration::deleteByName('WORLDPAY_INSTID');
 		Configuration::deleteByName('WORLDPAY_DEMOMODE');
+		Configuration::deleteByName('WORLDPAY_REDIRECT_TIME');
 
 		return parent::uninstall();
 	}
@@ -50,10 +51,11 @@ class worldpay extends PaymentModule
 
 	public function getContent()
 	{
-		if (isset($_POST['submitModule']))
+		if (isset($_POST['save']))
 		{
 			Configuration::updateValue('WORLDPAY_INSTID',Tools::getvalue('instID'));
 			Configuration::updateValue('WORLDPAY_DEMOMODE',Tools::getvalue('demo_mode'));
+			Configuration::updateValue('WORLDPAY_REDIRECT_TIME',abs(intval(Tools::getvalue('redirect_time'))));
 
 			echo '<div class="conf confirm"><img src="../img/admin/ok.gif"/>'.$this->l('Configuration updated').'</div>';
 		}
@@ -68,9 +70,11 @@ class worldpay extends PaymentModule
 		<form action="'.Tools::htmlentitiesutf8($_SERVER['REQUEST_URI']).'" method="post">
 			<fieldset class="width2">
 				<legend><img src="../img/admin/contact.gif" />'.$this->l('Settings').'</legend>
-				<label>'.$this->l('Account ID').'</label>
+				<label>'.$this->l('WorldPay Installation ID').'</label>
 				<div class="margin-form"><input type="text" size="20" name="instID" value="'.Configuration::get('WORLDPAY_INSTID').'" /></div>
-				<label>'.$this->l('Mode').'</label>
+				<label>'.$this->l('Redirect Time from Payment Page to WorldPay Site (in Milliseconds)').'</label>
+				<div class="margin-form"><input type="text" size="20" name="redirect_time" value="'.Configuration::get('WORLDPAY_REDIRECT_TIME').'" /></div>
+				<label>'.$this->l("Mode (Test Mode will not charge your credit card.)").'</label>
 				<div class="margin-form">
 					<input type="radio" name="demo_mode" value="100" style="vertical-align: middle;" '.(Tools::getValue('demo_mode', Configuration::get('WORLDPAY_DEMOMODE')) ? 'checked="checked"' : '').' />
 					<span style="color: #900;">'.$this->l('Test').'</span>&nbsp;
@@ -79,13 +83,7 @@ class worldpay extends PaymentModule
 				</div>
 				<br /><center><input type="submit" name="submitModule" value="'.$this->l('Update settings').'" class="button" /></center>
 			</fieldset>
-		</form>
-		<div class="clear">&nbsp;</div>
-		<fieldset>
-			<legend>PrestaShop Addons</legend>
-			'.$this->l('This module has been developped by PrestaShop SA and can only be sold through').' <a href="http://addons.prestashop.com">addons.prestashop.com</a>.<br />
-			'.$this->l('Please report all bugs to').' <a href="mailto:addons@prestashop.com">addons@prestashop.com</a> '.$this->l('or using our').' <a href="http://addons.prestashop.com/contact-form.php">'.$this->l('contact form').'</a>.
-		</fieldset>';
+		</form>';
 	}
 	
 	public function hookPayment($params)
@@ -103,7 +101,7 @@ class worldpay extends PaymentModule
 		$worldpayParams['currency'] = $currency->iso_code;
 		$worldpayParams['testMode'] = Configuration::get("WORLDPAY_DEMOMODE");
 		$worldpayParams['name'] = $customer->firstname.' '.$customer->lastname;
-		$worldpayParams['address'] = $address->address1.$address->address2;
+		$worldpayParams['address'] = $address->address1.' '.$address->address2;
 		$worldpayParams['postcode'] = $address->postcode;
 		$worldpayParams['email'] = $customer->email;
 		$worldpayParams['country'] = $country->iso_code;
@@ -113,6 +111,7 @@ class worldpay extends PaymentModule
 		$worldpayParams['failureURL'] = 'http://'.htmlspecialchars($_SERVER['HTTP_HOST'], ENT_COMPAT, 'UTF-8').__PS_BASE_URI__.'modules/'.$this->name.'/validation.php?cartId='.$params['cart']->id;
 		
 		$smarty->assign('p', $worldpayParams);
+		$smarty->assign('redirect_time', abs(intval(Configuration::get("WORLDPAY_REDIRECT_TIME"))));
 		
 		return $this->display(__FILE__, 'worldpay.tpl');
     }
