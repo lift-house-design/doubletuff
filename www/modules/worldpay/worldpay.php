@@ -76,7 +76,7 @@ class worldpay extends PaymentModule
 				'.(empty($saved)?'':"<p>$saved</p>").'
 
 				<p>
-				<label><a href="http://wp-support.crm.worldpay.com/app/answers/detail/a_id/1132/~/what-is-an-installation-id-or-instid%3F">'.$this->l('WorldPay Installation ID:').'</a></label>
+				<label><a target="_blank" href="http://wp-support.crm.worldpay.com/app/answers/detail/a_id/1132/~/what-is-an-installation-id-or-instid%3F">'.$this->l('WorldPay Installation ID:').'</a></label>
 				&nbsp;
 				<input type="text" size="20" name="instID" value="'.Configuration::get('WORLDPAY_INSTID').'" />
 				<br/>
