@@ -71,9 +71,11 @@ class worldpay extends PaymentModule
 			<fieldset class="width2">
 				<legend><img src="../img/admin/contact.gif" />'.$this->l('Settings').'</legend>
 				<label>'.$this->l('WorldPay Installation ID').'</label>
-				<div class="margin-form"><input type="text" size="20" name="instID" value="'.Configuration::get('WORLDPAY_INSTID').'" /></div>
+				<input type="text" size="20" name="instID" value="'.Configuration::get('WORLDPAY_INSTID').'" />
+				<hr/>
 				<label>'.$this->l('Redirect Time from Payment Page to WorldPay Site (in Milliseconds)').'</label>
-				<div class="margin-form"><input type="text" size="20" name="redirect_time" value="'.Configuration::get('WORLDPAY_REDIRECT_TIME').'" /></div>
+				<input type="text" size="20" name="redirect_time" value="'.Configuration::get('WORLDPAY_REDIRECT_TIME').'" />
+				<hr/>
 				<label>'.$this->l("Mode (Test Mode will not charge your credit card.)").'</label>
 				<div class="margin-form">
 					<input type="radio" name="demo_mode" value="100" style="vertical-align: middle;" '.(Tools::getValue('demo_mode', Configuration::get('WORLDPAY_DEMOMODE')) ? 'checked="checked"' : '').' />
