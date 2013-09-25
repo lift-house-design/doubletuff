@@ -60,7 +60,7 @@ class worldpay extends PaymentModule
 			Configuration::updateValue('WORLDPAY_DEMOMODE',Tools::getvalue('demo_mode'));
 			Configuration::updateValue('WORLDPAY_REDIRECT_TIME',abs(intval(Tools::getvalue('redirect_time'))));
 
-			echo '<div class="conf confirm"><img src="../img/admin/ok.gif"/>'.$this->l('Configuration updated').'</div>';
+			$saved = '<div class="conf confirm">'.$this->l('Your settings have been saved.').'</div>';
 		}
 		
 		return '
@@ -73,20 +73,44 @@ class worldpay extends PaymentModule
 		<form action="'.Tools::htmlentitiesutf8($_SERVER['REQUEST_URI']).'" method="post">
 			<fieldset class="width2">
 				<legend><img src="../img/admin/contact.gif" />'.$this->l('Settings').'</legend>
-				<label>'.$this->l('WorldPay Installation ID').'</label>
+				'.(empty($saved)?'':"<p>$saved</p>").'
+
+				<p>
+				<label><a href="http://wp-support.crm.worldpay.com/app/answers/detail/a_id/1132/~/what-is-an-installation-id-or-instid%3F">'.$this->l('WorldPay Installation ID:').'</a></label>
+				&nbsp;
 				<input type="text" size="20" name="instID" value="'.Configuration::get('WORLDPAY_INSTID').'" />
-				<hr/>
-				<label>'.$this->l('Redirect Time from Payment Page to WorldPay Site (in Milliseconds)').'</label>
+				<br/>
+				<center>
+				<i style="font-size:12px;font-weight:normal">
+					Your Installation ID can be found by logging
+					in to your worldpay merchant account.
+				</i>
+				</center>
+				</p>
+				<p>
+				<label>'.$this->l('Redirect Time (in milliseconds):').'</label>&nbsp;
 				<input type="text" size="20" name="redirect_time" value="'.Configuration::get('WORLDPAY_REDIRECT_TIME').'" />
-				<hr/>
-				<label>'.$this->l("Mode (Test Mode will not charge your credit card.)").'</label>
-				<div class="margin-form">
-					<input type="radio" name="demo_mode" value="100" style="vertical-align: middle;" '.(Tools::getValue('demo_mode', Configuration::get('WORLDPAY_DEMOMODE')) ? 'checked="checked"' : '').' />
-					<span style="color: #900;">'.$this->l('Test').'</span>&nbsp;
-					<input type="radio" name="demo_mode" value="0" style="vertical-align: middle;" '.(!Tools::getValue('demo_mode', Configuration::get('WORLDPAY_DEMOMODE')) ? 'checked="checked"' : '').' />
-					<span style="color: #080;">'.$this->l('Production').'</span>
-				</div>
-				<br /><center><input type="submit" name="submitModule" value="'.$this->l('Update settings').'" class="button" /></center>
+				<br/>
+				<center>
+				<i style="font-size:12px;font-weight:normal">
+					Time to wait before redirecting from the
+					payment page to the worldpay website.
+				</i>
+				</center>
+				</p>
+				<p>
+				<label>'.$this->l("Payment Mode:").'</label>&nbsp;
+					<input type="radio" name="demo_mode" value="100" '.(Tools::getValue('demo_mode', Configuration::get('WORLDPAY_DEMOMODE')) ? 'checked="checked"' : '').' />
+					<b style="position:relative;top:2px">'.$this->l('Test').'</b>&nbsp;&nbsp;
+					<input type="radio" name="demo_mode" value="0" '.(!Tools::getValue('demo_mode', Configuration::get('WORLDPAY_DEMOMODE')) ? 'checked="checked"' : '').' />
+					<b style="position:relative;top:2px">'.$this->l('Production').'</b>
+				<center>
+				<i style="font-size:12px;font-weight:normal">
+					Test Mode will not charge your credit card.
+				</i>
+				</center>
+				</p>
+				<br /><center><input type="submit" name="save" value="'.$this->l('Update settings').'" class="button" /></center>
 			</fieldset>
 		</form>';
 	}
