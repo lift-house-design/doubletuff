@@ -13,7 +13,7 @@ $('#video-modal').on('hidden', function () {
 })
 </script>
 
-<div id="video-modal" class="modal hide" style="max-height:254px;height:254px;max-width:440px;width:440px;margin-left:-220px"><div class="modal-body" style="max-height:250px;height:250px;max-width:440px;width:440px;text-align:center"></div></div>	
+<div id="video-modal" class="modal hide" style="max-height:254px;height:254px;max-width:440px;width:440px;margin-left:-220px;left:50%"><div class="modal-body" style="max-height:250px;height:250px;max-width:440px;width:440px;text-align:center"></div></div>	
 
 <section id="video_block_right" class="block products_block column_box">
 	<h4 class="title_block"><span>{l s='Video' mod='blocknewproducts'}</span> <i class="column_icon_toggle icon-plus-sign"></i></h4>
