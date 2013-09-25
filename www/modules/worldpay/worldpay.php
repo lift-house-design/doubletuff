@@ -22,6 +22,9 @@ class worldpay extends PaymentModule
 	
 	public function install()
 	{
+		Configuration::updateValue('WORLDPAY_INSTID','');
+		Configuration::updateValue('WORLDPAY_DEMOMODE',100);
+		Configuration::updateValue('WORLDPAY_REDIRECT_TIME',0);
 		return (parent::install() AND $this->registerHook('orderConfirmation') AND $this->registerHook('payment'));
 	}
 	
