@@ -22,6 +22,43 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+<!-- MODULE Video -->
+
+<script>
+function video_modal(){
+	$('#video-modal').modal();
+	$('#video-modal > div.modal-body').html(
+		'<iframe width="420" height="234" src="//www.youtube.com/embed/60E4vvuwdso?rel=0&showinfo=0&autoplay=1&controls=1;autohide=1" frameborder="0" allowfullscreen style="position:absolute;top:10px;left:10px"></iframe>'
+	);
+}
+$('#video-modal').on('hidden', function () {
+	alert('butts');
+    $('#video-modal > div.modal-body').html('');
+})
+</script>
+
+<div id="video-modal" class="modal hide" style="max-height:254px;height:254px;max-width:440px;width:440px;margin-left:-220px;left:50%"><div class="modal-body" style="max-height:250px;height:250px;max-width:440px;width:440px;text-align:center"></div></div>	
+
+<section id="video_block_right" class="block products_block column_box">
+	<h4 class="title_block"><span>{l s='Video' mod='blocknewproducts'}</span> <i class="column_icon_toggle icon-plus-sign"></i></h4>
+	<div class="block_content toggle_content" style="display:block;cursor:pointer" onclick="video_modal()">
+		<ul class="products">
+        	<li class="shop_box clearfix" style="padding:10px">
+       			<a class="products_block_img" title="" style="display:block">
+                	<img src="http://img.youtube.com/vi/60E4vvuwdso/0.jpg" alt="{$newproduct.legend|escape:html:'UTF-8'}" />
+               	</a>
+           		<h5 class="s_title_block" style="padding-top:30px">
+					<a class="product_link" href="#">
+						<i class="icon icon-play"> <b>Play Video</b></i></a>
+					</a>
+           		</h5>
+            </li>
+		</ul>
+	</div>
+</section>
+<!-- END MODULE video -->
+
+<!-- CONTACT -->
 <section id="contact_block" class="block column_box">
 	<h4 class="title_block"><span>{l s='Contact us' mod='blockcontact'}</span><i class="column_icon_toggle icon-plus-sign"></i></h4>
 	<div class="block_content clearfix toggle_content">
