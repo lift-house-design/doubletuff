@@ -98,10 +98,8 @@ class BlockNewProducts extends Module
 		var_dump($params['cookie']->id_lang);
 		var_dump(Configuration::get('NEW_PRODUCTS_NBR'));
 
-		$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, (int)(Configuration::get('NEW_PRODUCTS_NBR')));
-		if (!$newProducts && !Configuration::get('PS_BLOCK_NEWPRODUCTS_DISPLAY'))
-			return;
-
+		$newProducts = Product::getNewProducts(1, 0, 5);
+	
 		$this->smarty->assign(array(
 			'new_products' => $newProducts,
 			'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
