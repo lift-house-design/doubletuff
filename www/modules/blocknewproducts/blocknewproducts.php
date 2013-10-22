@@ -95,10 +95,7 @@ class BlockNewProducts extends Module
 
 	public function hookRightColumn($params)
 	{
-		var_dump($params['cookie']->id_lang);
-		var_dump(Configuration::get('NEW_PRODUCTS_NBR'));
-
-		$newProducts = Product::getNewProducts(1, 0, 5);
+		$newProducts = Product::getNewProducts(1, 0, 10000);
 	
 		$this->smarty->assign(array(
 			'new_products' => $newProducts,
