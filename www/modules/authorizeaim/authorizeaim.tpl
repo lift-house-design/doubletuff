@@ -89,7 +89,7 @@
 						<option value="{$smarty.section.date_m.index}">{$smarty.section.date_m.index}</option>{/section}
 					</select>
 				 	/
-					<select name="x_exp_date_y" style="width:120px">{section name=date_y start=11 loop=20}
+					<select name="x_exp_date_y" style="width:90px">{section name=date_y start=11 loop=20}
 						<option value="{$smarty.section.date_y.index}">20{$smarty.section.date_y.index}</option>{/section}
 					</select>
 				</div>
