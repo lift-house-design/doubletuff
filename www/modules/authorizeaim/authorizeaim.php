@@ -190,8 +190,8 @@ class authorizeAIM extends PaymentModule
 
 	public function hookPayment($params)
 	{
-		if (Configuration::get('PS_SSL_ENABLED') || (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) != 'off'))
-		{
+		// suck a dick if (Configuration::get('PS_SSL_ENABLED') || (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) != 'off'))
+		//{
 			$isFailed = Tools::getValue('aimerror');
 
 			$cards = array();
@@ -211,7 +211,7 @@ class authorizeAIM extends PaymentModule
 			$this->context->smarty->assign('new_base_dir', $url);
 
 			return $this->display(__FILE__, 'authorizeaim.tpl');
-		}
+		//}
 	}
 
 	public function hookHeader()
