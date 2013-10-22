@@ -95,7 +95,7 @@ class BlockNewProducts extends Module
 
 	public function hookRightColumn($params)
 	{
-		$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, 9999;
+		$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, 9999);
 		
 //		$newProducts = Product::getProducts((int)($params['cookie']->id_lang), 0, 5);
 
