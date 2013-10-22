@@ -1,5 +1,5 @@
 <!-- MODULE Block new products -->
-<section id="new-products_block_right" class="block products_block column_box" style="overflow:auto">
+<section id="new-products_block_right" class="block products_block column_box">
 	<h4 class="title_block"><span>{l s='New products' mod='blocknewproducts'}</span> <i class="column_icon_toggle icon-plus-sign"></i></h4>
 	<div class="block_content toggle_content">
 	{if $new_products !== false}
