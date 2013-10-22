@@ -94,7 +94,7 @@
 						<option value="{$smarty.section.date_y.index}">20{$smarty.section.date_y.index}</option>{/section}
 					</select>
 				</div>
-				<div style="float:left;width:100%;text-align:center;border:1px solid green">
+				<div class="authnet-row" style="text-align:center">
 					<input type="button" id="asubmit" value="{l s='Validate order' mod='authorizeaim'}" style="padding-left: 25px; padding-right: 25px;margin:10px auto" class="button" />
 				</div>
 			</div>
