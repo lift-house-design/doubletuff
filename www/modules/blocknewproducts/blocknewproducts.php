@@ -96,7 +96,7 @@ class BlockNewProducts extends Module
 	public function hookRightColumn($params)
 	{
 		$newProducts = Product::getNewProducts(1, 0, 10000);
-	
+		var_dump($newProducts);
 		$this->smarty->assign(array(
 			'new_products' => $newProducts,
 			'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
