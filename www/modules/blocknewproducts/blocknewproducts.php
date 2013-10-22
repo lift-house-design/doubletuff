@@ -95,14 +95,14 @@ class BlockNewProducts extends Module
 
 	public function hookRightColumn($params)
 	{
-		//$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, (int)(Configuration::get('NEW_PRODUCTS_NBR')));
-		$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, 9999);
-		
+		$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, (int)(Configuration::get('NEW_PRODUCTS_NBR')));
+		//$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, 9999);
+		var_dump($newProducts);
+		die;
 		if (!$newProducts && !Configuration::get('PS_BLOCK_NEWPRODUCTS_DISPLAY'))
 			return;
 
 		// sort by however I want.
-		var_dump($newProducts);
 		return;
 		//$newProducts = array_slice($newProducts,0,5);
 
