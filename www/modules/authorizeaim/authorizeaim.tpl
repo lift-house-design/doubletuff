@@ -85,11 +85,11 @@
 
 				<div class="authnet-row">
 					<label>{l s='Expiration date' mod='authorizeaim'}</label>
-					<select id="x_exp_date_m" name="x_exp_date_m" style="width:60px;">{section name=date_m start=01 loop=13}
+					<select id="x_exp_date_m" name="x_exp_date_m" style="width:50px;">{section name=date_m start=01 loop=13}
 						<option value="{$smarty.section.date_m.index}">{$smarty.section.date_m.index}</option>{/section}
 					</select>
 				 	/
-					<select name="x_exp_date_y" style="width:90px">{section name=date_y start=11 loop=20}
+					<select name="x_exp_date_y" style="width:80px">{section name=date_y start=11 loop=20}
 						<option value="{$smarty.section.date_y.index}">20{$smarty.section.date_y.index}</option>{/section}
 					</select>
 				</div>
