@@ -80,6 +80,11 @@
 				</div>
 
 				<div class="authnet-row">
+					<label>{l s='CVV' mod='authorizeaim'}</label> 
+					<input type="text" name="x_card_code" id="x_card_code" size="4" maxlength="4"/>
+				</div>
+
+				<div class="authnet-row">
 					<label>{l s='Expiration date' mod='authorizeaim'}</label>
 					<select id="x_exp_date_m" name="x_exp_date_m" style="width:60px;">{section name=date_m start=01 loop=13}
 						<option value="{$smarty.section.date_m.index}">{$smarty.section.date_m.index}</option>{/section}
@@ -89,12 +94,7 @@
 						<option value="{$smarty.section.date_y.index}">20{$smarty.section.date_y.index}</option>{/section}
 					</select>
 				</div>
-
-				<div class="authnet-row">
-					<label>{l s='CVV' mod='authorizeaim'}</label> 
-					<input type="text" name="x_card_code" id="x_card_code" size="4" maxlength="4"/>
-				</div>
-				<div style="float:left;width:100%;border:1px solid green">
+				<div style="float:left;width:100%;text-align:center;border:1px solid green">
 					<input type="button" id="asubmit" value="{l s='Validate order' mod='authorizeaim'}" style="padding-left: 25px; padding-right: 25px;margin:10px auto" class="button" />
 				</div>
 			</div>
