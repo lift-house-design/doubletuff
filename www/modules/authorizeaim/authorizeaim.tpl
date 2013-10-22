@@ -52,7 +52,7 @@
 						<div id="aut2">
 				{/if}
 
-				<div style="width: 126px; height: 200px; float: left; padding-top:40px; padding-right: 20px; border-right: 1px solid #DDD;">
+				<div style="width: 136px; height: 200px; float: left; padding-top:40px; padding-right: 10px; border-right: 1px solid #DDD;">
 					<img src="{$module_dir}logoa.gif" alt="secure payment" />
 				</div>
 
