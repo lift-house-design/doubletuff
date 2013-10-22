@@ -96,7 +96,7 @@ class BlockNewProducts extends Module
 	public function hookRightColumn($params)
 	{
 		$newProducts = Product::getNewProducts(1, 0, 10000);
-		var_dump($newProducts);
+		usort($newProducts,'sort_products_by_price');
 		$this->smarty->assign(array(
 			'new_products' => $newProducts,
 			'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
@@ -117,4 +117,7 @@ class BlockNewProducts extends Module
 
 }
 
-
+function sort_products_by_price($a, $b)
+{
+    return $b['price_tax_exc'] - $a['price_tax_exc'];
+}
