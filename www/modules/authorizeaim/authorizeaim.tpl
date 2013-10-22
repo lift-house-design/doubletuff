@@ -51,7 +51,6 @@
 				{else}
 						<div id="aut2">
 				{/if}
-				<br /><br />
 
 				<div style="width: 136px; height: 200px; float: left; padding-top:40px; padding-right: 20px; border-right: 1px solid #DDD;">
 					<img src="{$module_dir}logoa.gif" alt="secure payment" />
