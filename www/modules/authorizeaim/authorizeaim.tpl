@@ -60,8 +60,8 @@
 				<input type="hidden" name="x_invoice_num" value="{$x_invoice_num}" />
 
 				<div class="authnet-row">
-					<label style="margin-top: 4px; margin-left: 30px;display: block;width: 90px;float: left;">{l s='Card Type' mod='authorizeaim'}</label>
-					<select id="cardType" style="width:30%">
+					<label>{l s='Card Type' mod='authorizeaim'}</label>
+					<select id="cardType">
 						{if $cards.ax == 1}<option value="AmEx">American Express</option>{/if}
 						{if $cards.visa == 1}<option value="Visa">Visa</option>{/if}
 						{if $cards.mastercard == 1}<option value="MasterCard">MasterCard</option>{/if}
@@ -70,31 +70,33 @@
 				</div>
 				
 				<div class="authnet-row">
-					<label style="margin-top: 4px; margin-left: 30px;display: block;width: 90px;float: left;">{l s='Full name' mod='authorizeaim'}</label>
-					<input type="text" name="name" id="fullname" size="30" maxlength="25S" style="width:30%" />
+					<label>{l s='Full name' mod='authorizeaim'}</label>
+					<input type="text" name="name" id="fullname" size="30" maxlength="25S" />
 				</div>
 
 				<div class="authnet-row">
-					<label style="margin-top: 4px; margin-left: 30px;display: block;width: 90px;float: left;">{l s='Card number' mod='authorizeaim'}</label> 
-					<input type="text" name="x_card_num" id="cardnum" size="30" maxlength="16" autocomplete="Off"  style="width:30%"/>
+					<label>{l s='Card number' mod='authorizeaim'}</label> 
+					<input type="text" name="x_card_num" id="cardnum" size="30" maxlength="16" autocomplete="Off" />
 				</div>
 
 				<div class="authnet-row">
-					<label style="margin-top: 4px; margin-left: 30px;display: block;width: 90px;float: left;">{l s='Expiration date' mod='authorizeaim'}</label>
+					<label>{l s='Expiration date' mod='authorizeaim'}</label>
 					<select id="x_exp_date_m" name="x_exp_date_m" style="width:60px;">{section name=date_m start=01 loop=13}
 						<option value="{$smarty.section.date_m.index}">{$smarty.section.date_m.index}</option>{/section}
 					</select>
 				 	/
-					<select name="x_exp_date_y" style="width:20%">{section name=date_y start=11 loop=20}
+					<select name="x_exp_date_y" style="width:120px">{section name=date_y start=11 loop=20}
 						<option value="{$smarty.section.date_y.index}">20{$smarty.section.date_y.index}</option>{/section}
 					</select>
 				</div>
 
 				<div class="authnet-row">
-					<label style="margin-top: 4px; margin-left: 30px;display: block;width: 90px;float: left;">{l s='CVV' mod='authorizeaim'}</label> 
-					<input type="text" name="x_card_code" id="x_card_code" size="4" maxlength="4"  style="width:30%"/>
+					<label>{l s='CVV' mod='authorizeaim'}</label> 
+					<input type="text" name="x_card_code" id="x_card_code" size="4" maxlength="4"/>
 				</div>
-				<input type="button" id="asubmit" value="{l s='Validate order' mod='authorizeaim'}" style="padding-left: 25px; padding-right: 25px;margin:10px auto" class="button" />
+				<div style="float:left;width:100%;border:1px solid green">
+					<input type="button" id="asubmit" value="{l s='Validate order' mod='authorizeaim'}" style="padding-left: 25px; padding-right: 25px;margin:10px auto" class="button" />
+				</div>
 			</div>
 		</span>
 	</form>
