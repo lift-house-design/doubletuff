@@ -96,6 +96,7 @@ class BlockNewProducts extends Module
 	public function hookRightColumn($params)
 	{
 		$newProducts = Product::getNewProducts(1, 0, 10000);
+		$newProducts = ProductSale::getBestSalesLight(1, 0, 5)
 		usort($newProducts,'sort_products_by_price');
 		$this->smarty->assign(array(
 			'new_products' => $newProducts,
@@ -117,7 +118,12 @@ class BlockNewProducts extends Module
 
 }
 
-function sort_products_by_price($a, $b)
+function sort_products_by_price_desc($a, $b)
 {
     return $b['price_tax_exc'] - $a['price_tax_exc'];
+}
+
+function sort_products_by_price_asc($a, $b)
+{
+    return $a['price_tax_exc'] - $b['price_tax_exc'];
 }
