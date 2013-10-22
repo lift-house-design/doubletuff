@@ -96,7 +96,7 @@ class BlockNewProducts extends Module
 	public function hookRightColumn($params)
 	{
 		$newProducts = Product::getNewProducts(1, 0, 10000);
-		$newProducts = ProductSale::getBestSalesLight(1, 0, 5)
+		$newProducts = ProductSale::getBestSalesLight(1, 0, 5);
 		usort($newProducts,'sort_products_by_price');
 		$this->smarty->assign(array(
 			'new_products' => $newProducts,
