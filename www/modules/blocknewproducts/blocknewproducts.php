@@ -98,7 +98,7 @@ class BlockNewProducts extends Module
 		$newProducts = Product::getNewProducts(1, 0, 10000);
 		//$newProducts = ProductSale::getBestSalesLight(1, 0, 5);
 		usort($newProducts,'sort_products_by_price_desc');
-		$newProducts = array_slice($newProducts,0,20);
+		$newProducts = array_slice($newProducts,0,50);
 		$show = array();
 		while(count($show) < 5 && count($newProducts)){
 			$i = array_rand($newProducts);
