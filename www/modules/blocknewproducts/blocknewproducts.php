@@ -104,6 +104,7 @@ class BlockNewProducts extends Module
 
 		// sort by however I want.
 		var_dump($newProducts);
+		return;
 		$newProducts = array_slice($newProducts,0,5);
 
 		$this->smarty->assign(array(
