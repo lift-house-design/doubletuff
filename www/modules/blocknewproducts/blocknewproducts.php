@@ -97,7 +97,7 @@ class BlockNewProducts extends Module
 	{
 		//$newProducts = Product::getNewProducts((int)($params['cookie']->id_lang), 0, (int)(Configuration::get('NEW_PRODUCTS_NBR')));
 		
-		//$newProducts = Product::getProducts((int)($params['cookie']->id_lang), 0, 9999);
+		$newProducts = Product::getProducts((int)($params['cookie']->id_lang), 0, 5);
 
 		//if (!$newProducts && !Configuration::get('PS_BLOCK_NEWPRODUCTS_DISPLAY'))
 			return;
