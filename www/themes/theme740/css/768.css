@@ -2,8 +2,12 @@
 ================================================== */
 @media only screen and (min-width: 950px) and (max-width: 1199px) {
 
-.shop_box{
+li.shop_box{
 	width:198px;
+}
+
+ul.products{
+	width:220px;
 }
 
 body {}

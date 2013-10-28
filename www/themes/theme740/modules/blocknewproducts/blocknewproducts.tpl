@@ -3,7 +3,7 @@
 	<h4 class="title_block"><span>{l s='Top Sellers' mod='blocknewproducts'}</span> <i class="column_icon_toggle icon-plus-sign"></i></h4>
 	<div class="block_content toggle_content">
 	{if $new_products !== false}
-		<ul class="products" style="width:270px;overflow:visible">
+		<ul class="products" style="overflow:visible">
 		{foreach from=$new_products item=newproduct name=myLoop}
         	<li class="shop_box clearfix {if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}" style="padding:10px">
                 <a class="products_block_img" href="{$newproduct.link}" title="{$newproduct.legend|escape:html:'UTF-8'}"><img src="{$link->getImageLink($newproduct.link_rewrite, $newproduct.id_image, 'medium_default')}" alt="{$newproduct.legend|escape:html:'UTF-8'}" /></a>
