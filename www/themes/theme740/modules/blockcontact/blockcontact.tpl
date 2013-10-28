@@ -45,7 +45,7 @@ $('#video-modal').on('hidden', function () {
 		<ul class="products">
         	<li class="shop_box clearfix" style="padding:10px">
        			<a class="products_block_img" title="" style="display:block">
-                	<img src="http://img.youtube.com/vi/60E4vvuwdso/0.jpg" alt="{$newproduct.legend|escape:html:'UTF-8'}" />
+                	<img src="//img.youtube.com/vi/60E4vvuwdso/0.jpg" alt="{$newproduct.legend|escape:html:'UTF-8'}" />
                	</a>
            		<h5 class="s_title_block" style="padding-top:30px">
 					<a class="product_link" href="#">
