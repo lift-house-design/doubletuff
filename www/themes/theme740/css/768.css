@@ -61,6 +61,13 @@ body {}
         box-shadow: none;
 }
 
+li.shop_box{
+	width:144px;
+}
+
+ul.products{
+	width:166px;
+}
 
 
 #header {}
