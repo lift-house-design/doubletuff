@@ -96,11 +96,22 @@ class BlockNewProducts extends Module
 	public function hookRightColumn($params)
 	{
 		$newProducts = Product::getNewProducts(1, 0, 10000);
+		$count = 5;
 		//$newProducts = ProductSale::getBestSalesLight(1, 0, 5);
+		/* random of 50 most expensive
 		usort($newProducts,'sort_products_by_price_desc');
 		$newProducts = array_slice($newProducts,0,50);
+		*/
+		/* specific products by name */
+		echo '<div style="display:none">';
+		foreach($newProducts as $p){
+			var_dump($p);
+			echo "\n<br/>\n<br/>";
+		}
+		echo '</div>';
+		
 		$show = array();
-		while(count($show) < 5 && count($newProducts)){
+		while(count($show) < $count && count($newProducts)){
 			$i = array_rand($newProducts);
 			$show[] = $newProducts[$i];
 			unset($newProducts[$i]);
