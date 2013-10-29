@@ -98,24 +98,25 @@ class BlockNewProducts extends Module
 		$newProducts = Product::getNewProducts(1, 0, 10000);
 		$count = 5;
 		//$newProducts = ProductSale::getBestSalesLight(1, 0, 5);
+		
 		/* random of 50 most expensive
 		usort($newProducts,'sort_products_by_price_desc');
 		$newProducts = array_slice($newProducts,0,50);
 		*/
-		/* specific products by name */
-		echo '<div style="display:none">';
-		foreach($newProducts as $p){
-			var_dump($p);
-			echo "\n<br/>\n<br/>";
-		}
-		echo '</div>';
+
+		/* with images */
+		foreach($newProducts as $i => $p)
+			if($p['id_image'] === 'en-default')
+				unset($newProducts[$i]);
 		
+		// show random from selection
 		$show = array();
 		while(count($show) < $count && count($newProducts)){
 			$i = array_rand($newProducts);
 			$show[] = $newProducts[$i];
 			unset($newProducts[$i]);
 		}
+		
 		$this->smarty->assign(array(
 			'new_products' => $show,
 			'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
